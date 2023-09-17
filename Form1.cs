@@ -22,11 +22,6 @@ namespace LibraryMgmtSystem
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
@@ -35,6 +30,19 @@ namespace LibraryMgmtSystem
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnclose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void textUsername_MouseEnter(object sender, EventArgs e)
+        {
+            if(textUsername.Text == "Username")
+            {
+                textUsername.Clear();
+            }
         }
     }
 }
